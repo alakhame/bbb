@@ -1,0 +1,6 @@
+conf_api_join:
+    pattern:  /joinM
+    defaults: { _controller: ConfApiBundle:Examples:joinM }
+conf_api_create:
+    pattern:  /createmeeting
+    defaults: { _controller: ConfApiBundle:Examples:create}

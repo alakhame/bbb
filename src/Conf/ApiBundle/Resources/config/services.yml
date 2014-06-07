@@ -1,0 +1,7 @@
+parameters:
+#    conf_api.example.class: Conf\ApiBundle\Example
+
+services:
+#    conf_api.example:
+#        class: %conf_api.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

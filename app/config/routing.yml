@@ -1,3 +1,7 @@
+conf_api:
+    resource: "@ConfApiBundle/Resources/config/routing.yml"
+    prefix:   /
+
 rad_projet:
     resource: "@RadProjetBundle/Resources/config/routing.yml"
     prefix:   /
