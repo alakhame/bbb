@@ -1,0 +1,6 @@
+rad_projet_homepage:
+    pattern:  /cv
+    defaults: { _controller: RadProjetBundle:Default:index }
+validation:
+    pattern:  /valid
+    defaults: { _controller: RadProjetBundle:Default:validForm }

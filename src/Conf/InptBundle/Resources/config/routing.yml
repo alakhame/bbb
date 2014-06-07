@@ -1,0 +1,3 @@
+conf_inpt_homepage:
+    pattern:  /{page}
+    defaults: { _controller: ConfInptBundle:General:index, page:index }

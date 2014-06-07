@@ -1,0 +1,19 @@
+{% extends "ConfInptBundle::conff.html.twig" %}
+
+
+{% block menu %}
+  
+  
+  {# Le formulaire, avec URL de soumission vers la route « login_check » comme on l'a vu #}
+  <form action="" method="post">
+    <label for="username">Login   :</label> <br />
+    <input type="text" id="username" name="_username" >
+<br />
+    <label for="password">password:</label><br />
+    <input type="password" id="password" name="_password" />
+    <br />
+    <input type="submit" value="Connexion" />
+  </form>
+  
+  
+{% endblock %}

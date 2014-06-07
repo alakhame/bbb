@@ -1,0 +1,7 @@
+parameters:
+#    rad_projet.example.class: Rad\ProjetBundle\Example
+
+services:
+#    rad_projet.example:
+#        class: %rad_projet.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

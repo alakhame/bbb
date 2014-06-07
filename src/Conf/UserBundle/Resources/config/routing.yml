@@ -1,0 +1,3 @@
+conf_user_homepage:
+    pattern:  /reg
+    defaults: { _controller: ConfUserBundle:Default:reg }

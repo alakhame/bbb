@@ -1,0 +1,116 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" >
+<HTML dir=ltr>
+	<HEAD>
+		<title>INPT - Conference</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link rel="stylesheet" href="stylelogin.css" type="text/css">
+		<LINK REL="STYLESHEET" TYPE="text/css" HREF="./StyleSheet1.css">
+	</HEAD>
+	<body  bgcolor="#FFFFFF" text="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" onload="document.getElementById('Username').focus()">
+		
+		<form name="index_connexion"    id="index_connexion" action="{{ path("fos_user_security_check") }}" method="post">
+			<input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />
+
+			<TABLE align="center" WIDTH=780 BORDER=0 CELLPADDING=0 CELLSPACING=0 style="border-left-width: 1px;border-left-style: solid ; 					border-left-color: 003366 ;border-right-width: 1px;border-right-style: solid ; border-right-color: 003366 ;
+				border-top-width: 1px;border-top-style: solid ; border-top-color: 003366 ;border-bottom-width: 1px;
+				border-bottom-style: solid ; border-bottom-color: 003366 ;">
+	
+			  <tr> 
+			    <td COLSPAN=4 bgcolor="1868A3" height="2">&nbsp;</td>
+			  </tr>
+				<TR>
+		
+			    <TD ROWSPAN=3 width="262" valign="top"> <IMG SRC="{{asset("img/login_01.gif")}}" WIDTH=262 HEIGHT=433 align="bottom"></TD>
+					<TD COLSPAN=3>
+						<IMG SRC="{{asset("img/login_02.gif")}}" WIDTH=518 HEIGHT=177></TD>
+				</TR>
+				<TR>
+		
+			     
+    
+
+   
+
+    
+
+
+		
+			    <TD COLSPAN=2 height="210" valign="top" width="515"> 
+			      <table width="501" border="0" cellspacing="5" cellpadding="2">
+				<tr> 
+				  <td width="231" class="titre_connexion"><span id="login">Login</span></td>
+				  <td width="148"> 
+    				    <input id="Username" style="width:150px;" type="text" id="username" name="_username" value="{{ last_username }}" required="required" />
+				    <span id="RequiredFieldValidator1" style="color:Red;visibility:hidden;">*</span>
+				  </td>
+				  <td width="132">&nbsp; </td>
+				</tr>
+				<tr> 
+				  <td width="231" class="titre_connexion"><span id="MotPass">Password</span></td>
+				  <td width="148"> 
+    				    <input id="Password" style="width:150px;" type="password" id="password" name="_password" required="required" />
+                                    <span id="RequiredFieldValidator2" style="color:Red;visibility:hidden;">*</span>
+				  </td>
+				  <td rowspan="2" width="132"> 
+				    <div align="right"></div>
+				  </td>
+				</tr>
+				
+				<tr>
+					<td width="231" class="titre_connexion"></td>
+				  <td width="148"> 
+					<input type="checkbox" id="remember_me" name="_remember_me" value="on" />
+    					<label for="remember_me">{{ 'security.login.remember_me'|trans }}</label>
+
+				  </td>
+				  <td rowspan="2" width="132"> 
+				    <div align="right"></div>
+				  </td>
+				</tr>
+				
+				<tr> 
+				  <td width="231" class="titre_connexion" height="27">&nbsp;</td>
+				  <td width="148" height="27"> 
+				    <input  id="Button1" class="BoutonGo" type="submit" id="_submit" name="_submit" value="{{ 'security.login.submit'|trans }}" />
+				  </td>
+				  <td width="132" height="27">&nbsp; </td>
+				</tr>
+				<tr>
+				  <td colspan="2" class="titre_connexion" height="27">
+				    <div align="right"></div>
+				  </td>
+				  <td class="titre_connexion" height="27">&nbsp;</td>
+				</tr>
+				<tr> 
+				  <td colspan="2" class="titre_connexion" height="76"> 
+				    <div align="right"></div>
+				  </td>
+				  <td class="titre_connexion" height="76"> 
+				    <div align="right"><img src="{{asset("img/bbb.png")}}" width=84 height=59></div>
+				  </td>
+				</tr>
+			      </table>
+			      
+			     
+			      <div align="right"></div>
+			    </TD>
+				</TR>
+				<TR>
+		
+			    
+		
+			    
+				</TR>
+	
+			  <tr> 
+			    <td COLSPAN=4 bgcolor="1868A3">&nbsp;</td>
+			  </tr>
+			</TABLE>			
+			
+
+
+        </form>
+	</body>
+</HTML>
+

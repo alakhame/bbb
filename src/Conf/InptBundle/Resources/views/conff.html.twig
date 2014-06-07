@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>INPT - Conference</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="{{ asset('css/inpt/style.css') }}" type="text/css" />
+<link rel="stylesheet" type="text/css" href="{{ asset('css/inpt/coin-slider.css') }} " />
+<script type="text/javascript" src="{{ asset('js/inpt/cufon-yui.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/inpt/cufon-titillium-250.js') }}"></script>
+<script type="text/javascript"    src="{{ asset('js/inpt/jquery-1.4.2.min.js') }}"     ></script>
+<script type="text/javascript"     src="{{ asset('js/inpt/script.js') }}"  ></script>
+<script type="text/javascript"  src="{{ asset('js/inpt/coin-slider.min.js') }}"  ></script>
+<style>
+#tab2 td{
+  width:150px;
+}
+
+</style>
+
+		{% block app %}
+		
+          {% endblock %}
+
+</head>
+<body>
+<div class="main">
+  <div class="header">
+    <div class="header_resize">
+      <div class="logo">
+        <h1><a href="index.html">INPT<span>Conference</span> <small>Execellence Polyvalence Ouverture </small></a></h1>
+      </div>
+      <div class="menu_nav">
+        <ul>
+          <li class="active"><a href="index.html"><span>Home Page</span></a></li>
+          
+          <li><a href=#><span>About Us</span></a></li>
+      
+          <li><a href=#><span>Contact Us</span></a></li>
+        </ul>
+      </div>
+      <div class="clr"></div>
+      <div class="slider">
+        <div id="coin-slider"> <a href="#"><img src="{{asset('img/inpt/s1.jpg')}}" width="935" height="272" alt="" /> </a> <a href="#"><img src="{{asset('img/inpt/222.jpg')}}" width="935" height="272" alt="" /> </a> <a href="#"><img src="{{asset('img/inpt/slide3.jpg')}}" width="935" height="272" alt="" /> </a> </div>
+        <div class="clr"></div>
+      </div>
+      <div class="clr"></div>
+    </div>
+  </div>
+  <div class="content">
+    <div class="content_resize">
+      <div class="mainbar">
+        
+		
+		{% block body %}
+		
+          {% endblock %}
+		  
+		  
+		  
+		  
+		  
+      </div>
+      <div class="sidebar">
+        <div class="searchform">
+          <form id="formsearch" name="formsearch" method="post" action="#">
+            <span>
+            <input name="editbox_search" class="editbox_search" id="editbox_search" maxlength="80" value="Search our ste:" type="text" />
+            </span>
+            <input name="button_search" src="{{asset('img/inpt/search.gif')}}" class="button_search" type="image" />
+          </form>
+        </div>
+        <div class="clr"></div>
+        <div class="gadget">
+          
+		  
+		  
+		{% block menu %}
+		
+          {% endblock %}
+		  
+		  
+		  
+		  
+        </div>
+        <div class="gadget">
+          
+        </div>
+      </div>
+      <div class="clr"></div>
+    </div>
+  </div>
+  <div class="fbg">
+    <div class="fbg_resize">
+      <div class="col c1">
+        <h2><span>INPT<span>Conference</h2>
+        <a href="#"><img src="{{asset('img/inpt/22.jpg')}}"  width="270" height="190" alt="" class="gal" /></a>
+		</div>
+      <div class="col c2">
+        <h2><span>Descriptif du service</span> </h2>
+        <p>
+		
+		
+		Le service de Visioconférence Multipoint Multi-Plateforme de L'INPT vous permet de vous réunir avec vos collaborateurs et partenaires afin de réaliser des réunions en visioconférence à plusieurs sans vous déplacer. Ce service est accessible depuis n'importe quel équipement de visioconférence en IP , depuis un téléphone  mobile, ainsi que depuis votre ordinateur PC et MAC ou tablette  ANDROID.
+       N'hésitez pas à nous contacter pour toute information complémentaire.
+
+		</p>
+        
+      </div>
+      <div class="col c3">
+        <h2><span>Nous contacter </h2>
+        <p></p>
+        <p class="contact_info"> <span>Address:</span> 2, av ALLal EL Fassi - Madinat AL Irfane - Rabat - MAROC<br />
+          <span>Telephone:</span>  (212) 537 77 30 79<br />
+          <span>FAX:</span> (212) 537 77 30 44<br />
+          <span>Others:</span> (212) 634 21 87 88<br />
+          <span>E-mail:</span> <a href="#">inptconference@inpt.ac.ma</a> </p>
+      </div>
+      <div class="clr"></div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="footer_resize">
+      <p class="lf">&copy; <a href="http://www.inpt.ac.ma/">INPT 2014</a>.</p>
+      <p class="rf">Design by <a href="http://cese.inpt.ac.ma/">CESE</a></p>
+      <div style="clear:both;"></div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Dashboard - SB Admin</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet">
+
+    <!-- Add custom CSS here -->
+    <link href="{{ asset('css/sb-admin.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('font-awesome/css/font-awesome.min.css') }}">
+    <!-- Page Specific CSS -->
+    <link rel="stylesheet" href="{{ asset('css/morris-0.4.3.min.css') }}">
+  </head>
+
+  <body>
+
+    <div id="wrapper">
+
+      <!-- Sidebar -->
+      <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">SB Admin</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+          <ul class="nav navbar-nav side-nav">
+		    <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i>  Gérer les comptes  <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#"><i class="fa fa-desktop"></i> Afficher les comptes</a></li>
+                <li><a href="#"> <i class="fa fa-pencil-square-o"></i> modifier un compte</a></li>
+                <li><a href="#"><i class="fa fa-ban"></i> bloquer un compte</a></li>
+                <li><a href="#"><i class="fa fa-trash-o"></i> supprimer un compte</a></li>
+				 <li><a href="#"><i class="fa fa-sitemap"></i> créer en masse</a></li>
+				
+              </ul>
+            </li>
+		   
+		   
+		   <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-cogs"></i>  Paramétrer RADIUS   <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#"><i class="fa fa-wrench"></i> modifier les fonctionnalités</a></li>
+                <li><a href="#"><i class="fa fa-users"></i> déclarer les clients</a></li>
+                <li><a href="#"> <i class="fa fa-refresh"></i> paramétrer la comptabilité</a></li>
+             
+              </ul>
+            </li>
+		   
+		   
+		   <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-sort-amount-asc"></i>  Afficher les états   <b class="caret"></b></a>
+              <ul class="dropdown-menu">	
+                <li><a href="#"><i class="fa fa-signal"></i> les utilisateurs connectés</a></li>
+                <li><a href="#"><i class="fa fa-exclamation-triangle"></i> les violations d’accès</a></li>
+                <li><a href="#"><i class="fa fa-bar-chart-o"></i> les statistiques d’accès</a></li>
+                <li><a href="#"><i class="fa fa-star-o"></i> le top 10 :D</a></li>
+				 
+              </ul>
+            </li>
+            
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right navbar-user">
+            <li class="dropdown messages-dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope"></i> Messages <span class="badge">7</span> <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li class="dropdown-header">7 New Messages</li>
+              
+            
+                <li class="message-preview">
+                  <a href="#">
+                    <span class="avatar"><img src="{{asset('img/50x50.gif')}}"></span>
+                    <span class="name">John Smith:</span>
+                    <span class="message">Hey there, I wanted to ask you something...</span>
+                    <span class="time"><i class="fa fa-clock-o"></i> 4:34 PM</span>
+                  </a>
+                </li>
+                <li class="divider"></li>
+                <li><a href="#">View Inbox <span class="badge">7</span></a></li>
+              </ul>
+            </li>
+            <li class="dropdown alerts-dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i> Alerts <span class="badge">3</span> <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Default <span class="label label-default">Default</span></a></li>
+                <li><a href="#">Primary <span class="label label-primary">Primary</span></a></li>
+                <li><a href="#">Success <span class="label label-success">Success</span></a></li>
+                <li><a href="#">Info <span class="label label-info">Info</span></a></li>
+                <li><a href="#">Warning <span class="label label-warning">Warning</span></a></li>
+                <li><a href="#">Danger <span class="label label-danger">Danger</span></a></li>
+                <li class="divider"></li>
+                <li><a href="#">View All</a></li>
+              </ul>
+            </li>
+            <li class="dropdown messages-dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i>Admin <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+               
+              
+            
+                <li class="message-preview">
+                  <a >
+                    <span class="avatar"><img src="{{asset('img/50x50.gif')}}"></span>
+                    <span class="name">John Smith:</span>
+                    <span class="message">INE 2 , INPT </span>
+                     <span class="time"><i class="fa fa-clock-o"></i> 4:34 PM</span>
+                  </a>
+                </li>
+               <br>
+                <li class="divider"></li>
+                <li><a href="#"><i class="fa fa-power-off"></i> Log Out</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </nav>
+
+      <div id="page-wrapper">
+
+        <div class="row">
+          <div class="col-lg-12">
+            <h1>{% block titre %}
+		
+          {% endblock %}
+		  
+		  Dashboard 
+		  
+		  <small>
+		  {% block titre1 %}
+		
+          {% endblock %}
+		  Statistics Overview
+		  
+		  </small></h1>
+            <ol class="breadcrumb">
+              <li class="active"><i class="fa fa-dashboard"></i>
+			  
+			  {% block titre2 %}
+		
+             {% endblock %}
+		  
+			  Dashboard</li>
+            </ol>
+            <div class="alert alert-success alert-dismissable">
+              {% block text %}
+		
+            {% endblock %}
+              
+            </div>
+          </div>
+        </div><!-- /.row -->
+
+      
+        
+
+
+      </div><!-- /#page-wrapper -->
+
+    </div><!-- /#wrapper -->
+
+    <!-- JavaScript -->
+    <script src="{{ asset('js/jquery-1.10.2.js') }}"></script>
+    <script src="{{ asset('js/bootstrap.js') }}"></script>
+
+  
+
+  </body>
+</html>

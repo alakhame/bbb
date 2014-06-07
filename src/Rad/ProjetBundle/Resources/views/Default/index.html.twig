@@ -1,0 +1,114 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" >
+<HTML dir=ltr>
+	<HEAD>
+		<title>Connexion</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link rel="stylesheet" href="stylelogin.css" type="text/css">
+		<LINK REL="STYLESHEET" TYPE="text/css" HREF="./StyleSheet1.css">
+		<link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}" type="text/css" />
+	</HEAD>
+	<body  bgcolor="#FFFFFF" text="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" onload="document.getElementById('Username').focus()">
+		<form name="index_connexion" method="post" action={{path("validation")}} id="index_connexion">
+		
+			<TABLE align="center" WIDTH=780 BORDER=0 CELLPADDING=0 CELLSPACING=0 style="border-left-width: 1px;border-left-style: solid ; 					border-left-color: 003366 ;border-right-width: 1px;border-right-style: solid ; border-right-color: 003366 ;
+				border-top-width: 1px;border-top-style: solid ; border-top-color: 003366 ;border-bottom-width: 1px;
+				border-bottom-style: solid ; border-bottom-color: 003366 ;">
+	
+			  <tr> 
+			    <td COLSPAN=4 bgcolor="1868A3" height="2">&nbsp;</td>
+			  </tr>
+				<TR>
+		
+			    <TD ROWSPAN=3 width="262" valign="top"> <img SRC="{{asset('img/login_01.gif')}}" WIDTH=262 HEIGHT=433 align="bottom"></TD>
+					<TD COLSPAN=3>
+						<IMG SRC="{{asset('img/login_02.gif')}}" WIDTH=518 HEIGHT=177></TD>
+				</TR>
+				<TR>
+		
+			    
+		
+			    <TD COLSPAN=2 height="210" valign="top" width="515"> 
+			      <table width="501" border="0" cellspacing="5" cellpadding="2">
+				<tr> 
+				  <td width="231" class="titre_connexion"><span id="login">Login</span></td>
+				  <td width="148"> 
+				    <input name="login" type="text" maxlength="50" id="Username" placeholder="Username" style="width:150px;" />
+				    <span id="RequiredFieldValidator1" style="color:Red;visibility:hidden;">*</span>
+				  </td>
+				  <td width="132">&nbsp; </td>
+				</tr>
+				<tr> 
+				  <td width="231" class="titre_connexion"><span id="MotPass">Password</span></td>
+				  <td width="148"> 
+				    <input name="password" type="password" maxlength="50" id="Password" placeholder="Mot de passe" style="width:150px;" />
+                                    <span id="RequiredFieldValidator2" style="color:Red;visibility:hidden;">*</span>
+				  </td>
+				  <td rowspan="2" width="132"> 
+				    <div align="right"></div>
+				  </td>
+				</tr>
+				
+				
+				
+				<tr> 
+				
+				
+			
+				  <td width="1000" class="titre_connexion" height="47">
+				  <a class="btn" href=#>
+           mots de passe oublié »
+		 <a class="btn" href=#>
+           créer un compte »
+        </a>
+				  
+				 </td>
+				  <td width="200" height="27"> 
+				  <form class="well form-search">
+                 
+                 <button class="btn btn-primary" type="submit">Connexion</button>
+                </form>
+				    
+				  </td>
+				  <td width="132" height="27">&nbsp; </td>
+				</tr>
+				<tr>
+				  <td colspan="2" class="titre_connexion" height="27">
+				    <div align="right"></div>
+				  </td>
+				  <td class="titre_connexion" height="27"><div align="right"></div></td>
+				</tr>
+				
+				<tr> 
+				  <td colspan="2" class="titre_connexion" height="76"> 
+				    <div align="right"></div>
+				  </td>
+				  <td class="titre_connexion" height="76"> 
+				    <div align="right"><img src="{{asset('img/bbb.png')}}"width=180 height=80 ></div>
+				  </td>
+				</tr>
+			      </table>
+			      
+			     
+			      <div align="right"></div>
+			    </TD>
+				</TR>
+				<TR>
+		
+			    
+		
+			    
+				</TR>
+	
+			  <tr> 
+			    <td COLSPAN=4 bgcolor="1868A3">&nbsp;</td>
+			  </tr>
+			</TABLE>		
+			
+			
+
+
+        </form>
+	</body>
+</HTML>
+
