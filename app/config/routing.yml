@@ -1,26 +1,4 @@
-conf_backoffice:
-    resource: "@ConfBackofficeBundle/Resources/config/routing.yml"
-    prefix:   /
 
-conf_administration:
-    resource: "@ConfAdministrationBundle/Resources/config/routing.yml"
-    prefix:   /
-
-conf_prof:
-    resource: "@ConfProfBundle/Resources/config/routing.yml"
-    prefix:   /
-
-conf_etudiant:
-    resource: "@ConfEtudiantBundle/Resources/config/routing.yml"
-    prefix:   /
-
-conf_api:
-    resource: "@ConfApiBundle/Resources/config/routing.yml"
-    prefix:   /
-
-rad_projet:
-    resource: "@RadProjetBundle/Resources/config/routing.yml"
-    prefix:   /
 
 fos_user_security:
     resource: "@FOSUserBundle/Resources/config/routing/security.xml"
@@ -40,10 +18,40 @@ fos_user_resetting:
 fos_user_change_password:
     resource: "@FOSUserBundle/Resources/config/routing/change_password.xml"
     prefix: /profile
+
+fos_user_group:
+    resource: "@FOSUserBundle/Resources/config/routing/group.xml"
+    prefix: /group
+
+
 conf_user:
     resource: "@ConfUserBundle/Resources/config/routing.yml"
     prefix:   /
 
 conf_inpt:
     resource: "@ConfInptBundle/Resources/config/routing.yml"
+    prefix:   /
+
+conf_backoffice:
+    resource: "@ConfBackofficeBundle/Resources/config/routing.yml"
+    prefix:   /backoffice
+
+conf_administration:
+    resource: "@ConfAdministrationBundle/Resources/config/routing.yml"
+    prefix:   /administration
+
+conf_prof:
+    resource: "@ConfProfBundle/Resources/config/routing.yml"
+    prefix:   /prof
+
+conf_etudiant:
+    resource: "@ConfEtudiantBundle/Resources/config/routing.yml"
+    prefix:   /etudiant
+
+conf_api:
+    resource: "@ConfApiBundle/Resources/config/routing.yml"
+    prefix:   /
+
+rad_projet:
+    resource: "@RadProjetBundle/Resources/config/routing.yml"
     prefix:   /

@@ -60,6 +60,10 @@ class RegistrationController extends ContainerAware
                 $event = new FormEvent($form, $request);
                 $dispatcher->dispatch(FOSUserEvents::REGISTRATION_SUCCESS, $event);
 
+                //// donnons le role approprié
+                $this->associerRole($user);
+                ////
+
                 $userManager->updateUser($user);
 
                 if (null === $response = $event->getResponse()) {
@@ -78,6 +82,22 @@ class RegistrationController extends ContainerAware
         ));
     }
 
+    public function associerRole($user){
+        switch($user->getType() ){
+            case "Special" :
+                $user->addRole('ROLE_SUPER_ADMIN');
+            break;
+            case "Administration" :
+                $user->addRole('ROLE_ADMIN');
+            break;
+            case "Professeur" :
+                $user->addRole('ROLE_PROF');
+            break;
+            default :
+                $user->addRole('ROLE_ETUDIANT');
+            break;
+        }
+    }
     /**
      * Tell the user to check his email provider
      */
