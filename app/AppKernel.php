@@ -21,6 +21,10 @@ class AppKernel extends Kernel
             new Conf\UserBundle\ConfUserBundle(),
             new FOS\UserBundle\FOSUserBundle(),
             new Conf\ApiBundle\ConfApiBundle(),
+            new Conf\EtudiantBundle\ConfEtudiantBundle(),
+            new Conf\ProfBundle\ConfProfBundle(),
+            new Conf\AdministrationBundle\ConfAdministrationBundle(),
+            new Conf\BackofficeBundle\ConfBackofficeBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

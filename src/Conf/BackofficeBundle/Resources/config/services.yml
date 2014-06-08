@@ -1,0 +1,7 @@
+parameters:
+#    conf_backoffice.example.class: Conf\BackofficeBundle\Example
+
+services:
+#    conf_backoffice.example:
+#        class: %conf_backoffice.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

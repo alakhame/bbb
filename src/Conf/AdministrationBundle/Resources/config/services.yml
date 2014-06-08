@@ -1,0 +1,7 @@
+parameters:
+#    conf_administration.example.class: Conf\AdministrationBundle\Example
+
+services:
+#    conf_administration.example:
+#        class: %conf_administration.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

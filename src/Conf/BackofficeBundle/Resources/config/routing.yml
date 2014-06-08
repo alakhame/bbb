@@ -1,0 +1,3 @@
+conf_backoffice_homepage:
+    pattern:  /hello/{name}
+    defaults: { _controller: ConfBackofficeBundle:Default:index }

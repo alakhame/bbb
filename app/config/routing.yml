@@ -1,3 +1,19 @@
+conf_backoffice:
+    resource: "@ConfBackofficeBundle/Resources/config/routing.yml"
+    prefix:   /
+
+conf_administration:
+    resource: "@ConfAdministrationBundle/Resources/config/routing.yml"
+    prefix:   /
+
+conf_prof:
+    resource: "@ConfProfBundle/Resources/config/routing.yml"
+    prefix:   /
+
+conf_etudiant:
+    resource: "@ConfEtudiantBundle/Resources/config/routing.yml"
+    prefix:   /
+
 conf_api:
     resource: "@ConfApiBundle/Resources/config/routing.yml"
     prefix:   /
