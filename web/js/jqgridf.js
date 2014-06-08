@@ -3,14 +3,14 @@ jQuery(document).ready(function ($) {
         url: "example.php",
         datatype: "xml",
         mtype: "GET",
-        colNames: ["Inv No", "Date", "Amount", "Tax", "Total", "Notes"],
+        colNames: ["numero de confer", "conference ", "chef de conference ",  "date ", "joindre"],
         colModel: [
-            { name: "invid", width: 55 },
+            { name: "invid", width: 50 },
             { name: "invdate", width: 90 },
             { name: "amount", width: 80, align: "right" },
             { name: "tax", width: 80, align: "right" },
             { name: "total", width: 80, align: "right" },
-            { name: "note", width: 150, sortable: false }
+            
         ],
         pager: "#pager",
         rowNum: 10,
