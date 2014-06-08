@@ -1,0 +1,13 @@
+etudiantconfcours.html conferences en cours 
+etudiantconfregisted.html.twig conferences enregistrées accessibles 
+etudiantconfaccess.html.twig conferences accessibles
+etudianthistorique.html.twig historique des conférences assistées 
+
+
+
+
+
+
+ <li><a href="#">créer réunion enrégistrées</a></li>
+            <li><a href="#">inviter des étudiants</a></li>
+			

@@ -2,6 +2,22 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <title>INPT - Conference</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet">
+
+    <!-- Add custom CSS here -->
+    <link href="{{ asset('css/sb-admin.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('font-awesome/css/font-awesome.min.css') }}">
+    <!-- Page Specific CSS -->
+    <link rel="stylesheet" href="{{ asset('css/morris-0.4.3.min.css') }}">
+
+    <!-- JavaScript -->
+    <script src="{{ asset('js/jquery-1.10.2.js') }}"></script>
+    <script src="{{ asset('js/bootstrap.js') }}"></script>
+
+  
+ 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" href="{{ asset('css/inpt/style.css') }}" type="text/css" />
 <link rel="stylesheet" type="text/css" href="{{ asset('css/inpt/coin-slider.css') }} " />
@@ -15,7 +31,40 @@
   width:150px;
 }
 
+.required {
+ margin-left:2cm;}
+
+#fos_user_registration_form_username{
+ 
+  position: absolute;
+left:770px;}
+ #fos_user_registration_form_plainPassword_first{
+ position: absolute;
+left:770px;}
+ #fos_user_registration_form_plainPassword_second{
+position: absolute;
+left:770px;}
+  #fos_user_registration_form_prenom{
+position: absolute;
+left:770px;}
+  #fos_user_registration_form_nom{
+ position: absolute;
+left:770px;}
+  #fos_user_registration_form_email{
+position: absolute;
+left:770px;}
+  #fos_user_registration_form_type{
+position: absolute;
+left:770px;}
+ #submit_redister{
+  position: absolute;
+ left:1000px;}
+
+ 
+  
+}
 </style>
+
 
 		{% block app %}
 		

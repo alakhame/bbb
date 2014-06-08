@@ -1,0 +1,26 @@
+{% extends "ConfInptBundle::conff.html.twig" %}
+
+
+{% block menu %}
+  
+  
+  <h2 class="star"><span></span> Menu</h2>
+          <div class="clr"></div>
+            <ul class="nav nav-pills nav-stacked" >
+            <li  ><a href="./professeur">Profil</a></li>
+                  <li ><a href="./professeursalon">Salon</a></li>     
+                  <li class="active"  ><a href="./professeurconfcours">conferences en cours</a></li>  
+            <li ><a href="./professeurconfprogrammer">conference programmer</a></li>  
+            <li ><a href="./professeurconfhisto">historique des conférences</a></li> 
+            
+          </ul>
+  
+  
+{% endblock %}
+
+
+
+{% block body %}
+
+professeurconfcours 
+{% endblock %}
